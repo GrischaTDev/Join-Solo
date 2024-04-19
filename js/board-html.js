@@ -27,7 +27,7 @@ function renderAddNewTaskInPopup() {
                         <span>Assigned to</span>
                         <div class="assigned-input">
                             <input class="input-task-select" id="search-user" autocomplete="off" onkeydown="filterUser()" onclick="openUserList(event)" type="text" placeholder="Select contacts to assign">
-                            <img onclick="openUserList(event)" id="input-icon" class="input-arrow" src="./assets/img/arrow_drop_down_1.svg" alt="">
+                            <img onclick="openUserList(event)" id="input-icon" class="input-arrow" src="assets/img/arrow_drop_down_1.svg" alt="">
                         </div>
                         <div id="user-list" class="d-none board-user-list" onclick="doNotClose(event)"></div>
                         <div id="selected-user" class="selected-user-container"></div>
@@ -73,11 +73,11 @@ function renderAddNewTaskInPopup() {
                         <span>Subtask</span>
                         <div onclick="doNotClose(event)" class="input-sub-field">
                             <input class="input-subtask" id="subtask-inputfield" placeholder="Add new subtask" onclick="activeInput()" onkeydown="handleSubtaskInputEnter(event)"/>
-                            <img src="./assets/img/add_subtask.svg" class="suffix" id="addButton" alt="" onclick="activeInput()">
+                            <img src="assets/img/add_subtask.svg" class="suffix" id="addButton" alt="" onclick="activeInput()">
                             <div id="input-options" class="d-none">
-                                <img src="./assets/img/subtask-clear.svg" class="subtask-btn" alt="" onclick="clearInput()">
+                                <img src="assets/img/subtask-clear.svg" class="subtask-btn" alt="" onclick="clearInput()">
                                 <span class="input-options-border"></span>
-                                <img src="./assets/img/create-subtask.svg" class="subtask-btn" alt="" onclick="addTodo()">
+                                <img src="assets/img/create-subtask.svg" class="subtask-btn" alt="" onclick="addTodo()">
                             </div>
                         </div>
                         <ul id="mylist"></ul>
@@ -96,7 +96,7 @@ function renderAddNewTaskInPopup() {
                     </div>
                     <button class="button-create">
                         <span>Create Task</span>
-                        <img src="/assets/img/check.svg" alt="">
+                        <img src="assets/img/check.svg" alt="">
                     </button>
                 </div>
             </div>
@@ -125,7 +125,7 @@ function renderTaskDetailsInPopup(task, urgentSymbolHTML, mediumSymbolHTML, lowS
                 <p>${task.category}</p>
             </div>
             <div class="close_icon_box">
-                <img class="img_popup img_popup_mobile" style="cursor: pointer;" onclick="closeIncomePopup()" src="./assets/img/close_icon.svg" alt="close Button">
+                <img class="img_popup img_popup_mobile" style="cursor: pointer;" onclick="closeIncomePopup()" src="assets/img/close_icon.svg" alt="close Button">
             </div>
         </div>
         <div class="board-popup-content">
@@ -159,11 +159,11 @@ function renderTaskDetailsInPopup(task, urgentSymbolHTML, mediumSymbolHTML, lowS
         </div>
         <div class="edit-delete" id="edit">
             <a class="button-delete-edit" href="#" onclick="deleteTask(${task.id})">
-                <img class="edit-delete-img edit-delete-img-mobile" src="/assets/img/delete_icon.svg" alt="Bild plus Button" />
+                <img class="edit-delete-img edit-delete-img-mobile" src="assets/img/delete_icon.svg" alt="Bild plus Button" />
                 <div class="edit-delete-popup-button edit-delete-popup-button-mobile">Delete</div>
             </a>
             <a class="button-delete-edit" href="#" onclick="editPopup(${task.id})">
-                <img class="edit-delete-img edit-delete-img-mobile" src="/assets/img/edit_icon.svg" alt="Bild plus Button" />
+                <img class="edit-delete-img edit-delete-img-mobile" src="assets/img/edit_icon.svg" alt="Bild plus Button" />
                 <div class="edit-delete-popup-button edit-delete-popup-button-mobile">Edit</div>
             </a>
         </div>
@@ -181,7 +181,7 @@ function generateHtmlForEditPopup(taskId) {
     return/*html*/ `
     <form class="task-edit-form" onsubmit="addTask(event)" onclick="doNotClose(event), closeUserListInPopup(), clearInput()">
         <div class="close-icon-edit-popup">
-            <img class="img_popup" style="cursor: pointer;" onclick="closeEditPopup()" src="./assets/img/close_icon.svg" alt="close Button">
+            <img class="img_popup" style="cursor: pointer;" onclick="closeEditPopup()" src="assets/img/close_icon.svg" alt="close Button">
         </div>
 
         <div class="add-task-form-edit">
@@ -199,7 +199,7 @@ function generateHtmlForEditPopup(taskId) {
                 <span>Assigned to</span>
                 <div class="assigned-input">
                 <input class="input-task-select" id="search-user" autocomplete="off" onkeydown="filterUser()" onclick="openUserList(event)" type="text" placeholder="Select contacts to assign">
-                <img onclick="openUserListEdit(event)" id="input-icon" class="input-arrow" src="./assets/img/arrow_drop_down_1.svg" alt="">
+                <img onclick="openUserListEdit(event)" id="input-icon" class="input-arrow" src="assets/img/arrow_drop_down_1.svg" alt="">
             </div>
             <div id="user-list" class="d-none board-user-list" onclick="doNotClose(event)"></div>
             <div id="selected-user" class="selected-user-container"></div>
@@ -231,11 +231,11 @@ function generateHtmlForEditPopup(taskId) {
                 <span>Subtask</span>
                 <div onclick="doNotClose(event)" class="input-sub-field">
                     <input class="input-subtask" id="subtask-inputfield" placeholder="Add new subtask" onclick="activeInput()" onkeydown="handleSubtaskInputEnter(event)"/>
-                    <img src="./assets/img/add_subtask.svg" class="suffix" id="addButton" alt="" onclick="activeInput()">
+                    <img src="assets/img/add_subtask.svg" class="suffix" id="addButton" alt="" onclick="activeInput()">
                     <div id="input-options" class="d-none">
-                        <img src="./assets/img/subtask-clear.svg" class="subtask-btn" alt="" onclick="clearInput()">
+                        <img src="assets/img/subtask-clear.svg" class="subtask-btn" alt="" onclick="clearInput()">
                         <span class="input-options-border"></span>
-                        <img src="./assets/img/create-subtask.svg" class="subtask-btn" alt="" onclick="addTodo()">
+                        <img src="assets/img/create-subtask.svg" class="subtask-btn" alt="" onclick="addTodo()">
                     </div>
                 </div>
                 <ul id="mylist"></ul>
@@ -243,7 +243,7 @@ function generateHtmlForEditPopup(taskId) {
         </div>
         
         <div class="button-ok">
-            <button id="saveEditButton" class="button-edit-ok" onclick="SaveEditedTask(${taskId})">OK<img src="/assets/img/check.svg" alt=""></button>
+            <button id="saveEditButton" class="button-edit-ok" onclick="SaveEditedTask(${taskId})">OK<img src="assets/img/check.svg" alt=""></button>
         </div>
     </form>
  `;
@@ -280,7 +280,7 @@ function renderAllTasksInProgressfieldTodo(task, urgentSymbolHTML, mediumSymbolH
         <div class="card">
             <div class="card-category-and-drag-menu">
                 <div class="card-category-${task.category}">${task.category}</div>
-                <img src="./assets/img/drag-icon.png" alt="" onclick="event.stopPropagation(); dragAndDropPopup(${task.id})">
+                <img src="assets/img/drag-icon.png" alt="" onclick="event.stopPropagation(); dragAndDropPopup(${task.id})">
             </div>
             <div class="card-headline">${task.titel}</div>
             <div class="card-description">${task.description}</div>
@@ -330,7 +330,7 @@ function renderAllTasksInProgressfieldInProgress(task, urgentSymbolHTML, mediumS
         <div class="card">
         <div class="card-category-and-drag-menu">
                 <div class="card-category-${task.category}">${task.category}</div>
-                <img src="./assets/img/drag-icon.png" alt="" onclick="event.stopPropagation(); dragAndDropPopup(${task.id})">
+                <img src="assets/img/drag-icon.png" alt="" onclick="event.stopPropagation(); dragAndDropPopup(${task.id})">
             </div>
             <div class="card-headline">${task.titel}</div>
             <div class="card-description">${task.description}</div>
@@ -380,7 +380,7 @@ function renderAllTasksInProgressfieldAwaitFeedback(task, urgentSymbolHTML, medi
         <div class="card">
         <div class="card-category-and-drag-menu">
                 <div class="card-category-${task.category}">${task.category}</div>
-                <img src="./assets/img/drag-icon.png" alt="" onclick="event.stopPropagation(); dragAndDropPopup(${task.id})">
+                <img src="assets/img/drag-icon.png" alt="" onclick="event.stopPropagation(); dragAndDropPopup(${task.id})">
             </div>
             <div class="card-headline">${task.titel}</div>
             <div class="card-description">${task.description}</div>
@@ -430,7 +430,7 @@ function renderAllTasksInProgressfieldDone(task, urgentSymbolHTML, mediumSymbolH
         <div class="card">
         <div class="card-category-and-drag-menu">
                 <div class="card-category-${task.category}">${task.category}</div>
-                <img src="./assets/img/drag-icon.png" alt="" onclick="event.stopPropagation(); dragAndDropPopup(${task.id})">
+                <img src="assets/img/drag-icon.png" alt="" onclick="event.stopPropagation(); dragAndDropPopup(${task.id})">
             </div>
             <div class="card-headline">${task.titel}</div>
             <div class="card-description">${task.description}</div>
@@ -558,7 +558,7 @@ function renderUserListInEditPopup(user, userColor, initialLetters, i) {
         <span class="letter-icon" style="background-color:${userColor}">${initialLetters}</span>
         <div>${user.name}</div>
         </div>
-        <img id="user-checkbox${i}" src="${isUSerSelectedEdit(user.id)? "./assets/img/checkbox_active_white.svg": "./assets/img/checkbox.svg"}" alt="">
+        <img id="user-checkbox${i}" src="${isUSerSelectedEdit(user.id)? "assets/img/checkbox_active_white.svg": "assets/img/checkbox.svg"}" alt="">
     </div>
     `;
 }

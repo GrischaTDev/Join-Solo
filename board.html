@@ -4,31 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/assets/img/join-logo.svg">
+    <link rel="icon" href="assets/img/join-logo.svg">
     <title>Board</title>
-    <link rel="stylesheet" href="./css/desktop_menu.css">
-    <link rel="stylesheet" href="/css/mobile_menu_header.css">
-    <link rel="stylesheet" href="/css/board.css">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/css/addtask.css">
+    <link rel="stylesheet" href="css/desktop_menu.css">
+    <link rel="stylesheet" href="css/mobile_menu_header.css">
+    <link rel="stylesheet" href="css/board.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/addtask.css">
 
-    <script src="./js/board.js" defer></script>
-    <script src="/js/board-popups.js"></script>
-    <script src="./js/script.js" defer></script>
-    <script src="./js/add_task.js" defer></script>
-    <script src="./js/add-task-html.js"></script>
-    <script src="./js/login.js" defer></script>
-    <script src="./js/storage.js " defer></script>
-    <script src="./js/allTasks.js"></script>
-    <script src="/js/add-task-userlist.js"></script>
-    <script src="./js/board-html.js"></script>
+    <script src="js/board.js" defer></script>
+    <script src="js/board-popups.js"></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/add_task.js" defer></script>
+    <script src="js/add-task-html.js"></script>
+    <script src="js/login.js" defer></script>
+    <script src="js/storage.js " defer></script>
+    <script src="js/allTasks.js"></script>
+    <script src="js/add-task-userlist.js"></script>
+    <script src="js/board-html.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 
 <body onload="initBoard()" id="container">
-    <div w3-include-html="/assets/templates/header.html"></div>
-    <div w3-include-html="/assets/templates/desktop_menu.html"></div>
+    <div w3-include-html="assets/templates/header.html"></div>
+    <div w3-include-html="assets/templates/desktop_menu.html"></div>
     <div w3-include-html="assets/templates/mobile_menu.html"></div>
 
     <div id="content-board" class="content-board">
@@ -38,7 +38,7 @@
             <div class="desktop-position-add-task-button">
                 <a class="button-add-task desktop-button-add-task" onclick="openAddNewTaskPopup()">
                     <span class="add-task-text">Add Task</span>
-                    <img class="plus-button desktop-plus-button" src="/assets/img/plus_button_black.svg" alt="Bild plus Button" />
+                    <img class="plus-button desktop-plus-button" src="assets/img/plus_button_black.svg" alt="Bild plus Button" />
                 </a>
             </div>
         </div>
@@ -57,7 +57,7 @@
                 <div class="headlines-container desktop-headlines-container" id="todo">
                     <h6>To do</h6>
                     <a class="button-add-task-todo" onclick="openAddNewTaskPopup()">
-                        <img class="plus-button-two" src="/assets/img/plus_button_black.svg" alt="Bild plus Button" />
+                        <img class="plus-button-two" src="assets/img/plus_button_black.svg" alt="Bild plus Button" />
                     </a>
                 </div>
                 <div id="todo_container" class="drag-area desktop-drag-area"
@@ -71,7 +71,7 @@
                 <div class="headlines-container desktop-headlines-container" id="inprogress">
                     <h6>In progress</h6>
                     <a class="button-add-task-todo" onclick="openAddNewTaskPopup()">
-                        <img class="plus-button-two" src="/assets/img/plus_button_black.svg" alt="Bild plus Button" />
+                        <img class="plus-button-two" src="assets/img/plus_button_black.svg" alt="Bild plus Button" />
                     </a>
                 </div>
                 <div id="inprogress_container" class="drag-area desktop-drag-area"
@@ -85,7 +85,7 @@
                 <div class="headlines-container desktop-headlines-container" id="await_feedback">
                     <h6>Await feedback</h6>
                     <a class="button-add-task-todo" onclick="openAddNewTaskPopup()">
-                        <img class="plus-button-two" src="/assets/img/plus_button_black.svg" alt="Bild plus Button" />
+                        <img class="plus-button-two" src="assets/img/plus_button_black.svg" alt="Bild plus Button" />
                     </a>
                 </div>
                 <div id="await_feedback_container" class="drag-area desktop-drag-area"
@@ -112,7 +112,7 @@
     <div id="add-task-popup-container" class="popup-bg d-none" onclick="closeAddTaskPopup()"></div>
 
     <div id="msg-box-create-task" class="d-none">
-        <span>Task added to board <img src="./assets/img/menu-icon-board-white.svg" alt="Board icon"></span>
+        <span>Task added to board <img src="assets/img/menu-icon-board-white.svg" alt="Board icon"></span>
     </div>
 
     <div id="mobile-drag-popup" class="mobile-drag-popup d-none" onclick="">

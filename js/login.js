@@ -37,7 +37,7 @@ async function login() {
     if (loginEmail == user.email && loginPassword == user.password) {
         resetLoginForm(loginEmail, loginPassword);
         userPushLogin(user);
-        location.href = './summary.html';
+        location.href = 'summary.html';
     } else {
         console.log('Falsche Eingabe')
         return
@@ -94,12 +94,12 @@ function rememberMe() {
     }
 
     if (!checkBoxLogin) {
-        checkBoxImage.src = './assets/img/checkbox_active.svg';
+        checkBoxImage.src = 'assets/img/checkbox_active.svg';
         checkBoxLogin = true;
         pushRememberMe(loginEmail, loginPassword)
         loadRememberMeUser();
     } else {
-        checkBoxImage.src = './assets/img/checkbox.svg';
+        checkBoxImage.src = 'assets/img/checkbox.svg';
         checkBoxLogin = false;
         rememberMeUser.splice(0, rememberMeUser.length);
         saveRememberMe();
@@ -151,7 +151,7 @@ function loadRememberMeUser() {
 function loadRememberMeInputValue() {
     let checkBoxImage = document.getElementById('remember-me');
     if (rememberMeUser.length > 0) {
-        checkBoxImage.src = './assets/img/checkbox_active.svg';
+        checkBoxImage.src = 'assets/img/checkbox_active.svg';
         checkBoxLogin = true;
         document.getElementById('login-email').value = rememberMeUser[0].email;
         document.getElementById('login-password').value = rememberMeUser[0].password;
@@ -170,7 +170,7 @@ function guestLogIn() {
         name: 'Guest',
         color: 'rgb(222,222,69)'
     });
-    location.href = './summary.html';
+    location.href = 'summary.html';
     save();
 }
 

@@ -37,7 +37,7 @@ if (window.location.href.includes('add_task.html')) {
     const isClickInside = userList.contains(event.target);
     if (!isClickInside) { // Klick war außerhalb der Benutzerliste
       userList.classList.add('d-none');
-      inputIcon.src = './assets/img/arrow_drop_down_1.svg';
+      inputIcon.src = 'assets/img/arrow_drop_down_1.svg';
     }
   });
 }
@@ -85,7 +85,7 @@ async function addTask(event) {
   await createTaskMessage()
 
   let currentPage = window.location.pathname;
-  if (currentPage === "/board.html") {
+  if (currentPage === "./board.html") {
     showTaskOnPage(task);
     closeAddTaskPopup();
   }
@@ -361,7 +361,7 @@ async function createTaskMessage() {
   msg.classList.remove('d-none');
   setTimeout(() => {
     msg.classList.add('d-none'); // Popup ausblenden
-    window.location.href = "/board.html";
+    window.location.href = "./board.html";
   }, 1500);
 }
 

@@ -168,9 +168,9 @@ function filterAndRenderTasksDone(allTasks) {
  * 
  */
 function calculateTaskDetails(task) {
-  let urgentSymbolHTML = task.priority.urgent ? `<img src="/assets/img/prio-urgent.svg" alt="Urgent">` : "";
-  let mediumSymbolHTML = task.priority.medium ? `<img src="/assets/img/prio-medium.svg" alt="Medium">` : "";
-  let lowSymbolHTML = task.priority.low ? `<img src="/assets/img/prio-low.svg" alt="Low">` : "";
+  let urgentSymbolHTML = task.priority.urgent ? `<img src="assets/img/prio-urgent.svg" alt="Urgent">` : "";
+  let mediumSymbolHTML = task.priority.medium ? `<img src="assets/img/prio-medium.svg" alt="Medium">` : "";
+  let lowSymbolHTML = task.priority.low ? `<img src="assets/img/prio-low.svg" alt="Low">` : "";
   let userInitialsHTML = task.userList.map((user) => `<div class="initials-circle" style="background-color: ${user.backgroundcolor};">${user.fname.charAt(0)}${user.lname.charAt(0)}</div>`).join("");
   let completedSubtasks = task.subtask ? task.subtask.filter((subtask) => subtask.status).length : 0;
   let totalSubtasks = task.subtask ? task.subtask.length : 0;
@@ -314,7 +314,7 @@ function dragAndDropPopup(taskId) {
 function generateDragAndDropPopupHtml(taskId) {
   return /*html*/`
   <div class="mobile-drag-menu">
-            <img class="img_popup img_popup_mobile" style="cursor: pointer;"  src="./assets/img/close_icon.svg" alt="close Button" onclick="dragAndDropPopup()">
+            <img class="img_popup img_popup_mobile" style="cursor: pointer;"  src="assets/img/close_icon.svg" alt="close Button" onclick="dragAndDropPopup()">
         <div class="mobile-drag-item" onclick="moveToMobile('todo_container', ${taskId})">To do</div>
         <div class="mobile-drag-item" onclick="moveToMobile('inprogress_container', ${taskId})">In progress</div>
         <div class="mobile-drag-item" onclick="moveToMobile('await_feedback_container', ${taskId})">Await feedback</div>

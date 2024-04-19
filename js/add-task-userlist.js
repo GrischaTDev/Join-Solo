@@ -55,7 +55,7 @@ function openUserList(event) {
     userList.innerHTML = '';
     if (userList.classList.contains('d-none')) {
         userList.classList.remove('d-none');
-        inputIcon.src = './assets/img/arrow_drop_down_2.svg';
+        inputIcon.src = 'assets/img/arrow_drop_down_2.svg';
     }
     generateUserListHTML(userList);
     event.stopPropagation();
@@ -128,11 +128,11 @@ function toggleAddUser(i) {
     if (selectedUSerIndex === -1) {
         userColumn.classList.add('user-list-active');
         selectedUser.push(user)
-        checkBoxUser.src = './assets/img/checkbox_active_white.svg';
+        checkBoxUser.src = 'assets/img/checkbox_active_white.svg';
     } else {
         userColumn.classList.remove('user-list-active');
         selectedUser.splice(selectedUSerIndex, 1);
-        checkBoxUser.src = './assets/img/checkbox.svg';
+        checkBoxUser.src = 'assets/img/checkbox.svg';
     }
     renderUserList(i);
     save();

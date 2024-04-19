@@ -48,7 +48,7 @@ function renderEditContactCard(contactData, contactId) {
         <div id="edit_contact_card" class="edit_contact_card move-to-screen" onclick="doNotClose(event)">
         <div class="edit_contact_card_header">
         <div class="close_icon_box">
-            <img style="cursor: pointer;" onclick="hideEditCardFromScreen()" src="./assets/img/close_icon.svg" alt="close Button">
+            <img style="cursor: pointer;" onclick="hideEditCardFromScreen()" src="assets/img/close_icon.svg" alt="close Button">
         </div>
         <div class="edit_contact_popup_headline">
             <div class="popup_logo">
@@ -70,24 +70,24 @@ function renderEditContactCard(contactData, contactId) {
             </div>
             <div class="inputfield_box">
                 <input id="edit_contact_fname" class="inputfield" type="text" required placeholder="First Name">
-                <img class="input_icon" src="./assets/img/profile_mini_icon.svg" alt="profile icon">
+                <img class="input_icon" src="assets/img/profile_mini_icon.svg" alt="profile icon">
             </div>
             <div class="inputfield_box">
                 <input id="edit_contact_lname" class="inputfield" type="text" required placeholder="Last Name">
-                <img class="input_icon" src="./assets/img/profile_mini_icon.svg" alt="profile icon">
+                <img class="input_icon" src="assets/img/profile_mini_icon.svg" alt="profile icon">
             </div>
             <div class="inputfield_box">
                 <input id="edit_contact_email" class="inputfield" type="email" required placeholder="Email">
-                <img class="input_icon" src="./assets/img/mail_icon.svg" alt="email icon">
+                <img class="input_icon" src="assets/img/mail_icon.svg" alt="email icon">
             </div>
             <div class="inputfield_box">
                 <input id="edit_contact_phone" class="inputfield" type="number" name="phone" required placeholder="Phone">
-                <img class="input_icon" src="./assets/img/phone_icon.svg" alt="phone icon">
+                <img class="input_icon" src="assets/img/phone_icon.svg" alt="phone icon">
             </div>
             <div class="save_contact_box">
                 <div onclick="deleteSelectedContact('${contactId}'); hideEditCardFromScreen(); return false;" class="submit_delete_contact_button">Delete</div>
                 <button class="submit_save_contact_button">Save</button>
-                <img style="margin-left: -25px;" src="./assets/img/check.svg" alt="check">
+                <img style="margin-left: -25px;" src="assets/img/check.svg" alt="check">
             </div>
         </form>
 
@@ -118,7 +118,7 @@ function generateContactDetailsHtml(contact) {
                 <div id="blue_line_horizontal_show_contacts_container_desktop" class="blue_line_horizontal"></div>
             </div>
     <div class="close_icon_box">
-        <img style="cursor: pointer; height: 36px;" onclick="closeShowContact()" src="./assets/img/arrow_left.svg" alt="close Button">
+        <img style="cursor: pointer; height: 36px;" onclick="closeShowContact()" src="assets/img/arrow_left.svg" alt="close Button">
     </div>
 </div>
 
@@ -183,7 +183,7 @@ function generateContactDetailsHtml(contact) {
 </div>
 <div class="open_sidebar_button" id="open_sidebar_button">
                 <div onclick="openEditDeleteContactPopup('${contact.id}'), doNotClose(event)" class="add_contacts_button"><img
-                        src="./assets/img/three_points_icon.svg" alt="">
+                        src="assets/img/three_points_icon.svg" alt="">
                 </div>
             </div>
 </div>

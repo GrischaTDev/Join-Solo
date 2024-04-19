@@ -4,21 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/assets/img/join-logo.svg">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/css/addtask.css">
+    <link rel="icon" href="assets/img/join-logo.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/addtask.css">
     <link rel="stylesheet" href="css/mobile_menu_header.css">
     <link rel="stylesheet" href="css/desktop_menu.css">
 
-    <script src="./js/storage.js" defer></script>
-    <script src="./js/board.js" defer></script>
-    <script src="./js/script.js" defer></script>
-    <script src="./js/add_task.js" defer></script>
-    <script src="./js/login.js" defer></script>
-    <script src="/js/add-task-html.js"></script>
-    <script src="/js/allTasks.js"></script>
-    <script src="/js/add-task-userlist.js"></script>
-    <script src="./js/board-html.js"></script>
+    <script src="js/storage.js" defer></script>
+    <script src="js/board.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/add_task.js" defer></script>
+    <script src="js/login.js" defer></script>
+    <script src="js/add-task-html.js"></script>
+    <script src="js/allTasks.js"></script>
+    <script src="js/add-task-userlist.js"></script>
+    <script src="js/board-html.js"></script>
     <title>Join - Add Task</title>
 </head>
 
@@ -48,7 +48,7 @@
                         <span>Assigned to</span>
                         <div class="assigned-input">
                             <input class="input-task-select" id="search-user" autocomplete="off" onkeydown="filterUser()" onclick="openUserList(event)" type="text" placeholder="Select contacts to assign">
-                            <img onclick="openUserList(event)" id="input-icon" class="input-arrow" src="./assets/img/arrow_drop_down_1.svg" alt="">
+                            <img onclick="openUserList(event)" id="input-icon" class="input-arrow" src="assets/img/arrow_drop_down_1.svg" alt="">
                         </div>
                         <div id="user-list" class="d-none" onclick="doNotClose(event)"></div>
                         <div id="selected-user"></div>
@@ -94,11 +94,11 @@
                         <span>Subtask</span>
                         <div onclick="doNotClose(event)" class="input-sub-field">
                             <input class="input-subtask" id="subtask-inputfield" placeholder="Add new subtask" onclick="activeInput()" onkeydown="handleSubtaskInputEnter(event)" />
-                            <img src="./assets/img/add_subtask.svg" class="suffix" id="addButton" alt="" onclick="activeInput()">
+                            <img src="assets/img/add_subtask.svg" class="suffix" id="addButton" alt="" onclick="activeInput()">
                             <div id="input-options" class="d-none">
-                                <img src="./assets/img/subtask-clear.svg" class="subtask-btn" alt="" onclick="clearInput()">
+                                <img src="assets/img/subtask-clear.svg" class="subtask-btn" alt="" onclick="clearInput()">
                                 <span class="input-options-border"></span>
-                                <img src="./assets/img/create-subtask.svg" class="subtask-btn" alt="" onclick="addTodo()">
+                                <img src="assets/img/create-subtask.svg" class="subtask-btn" alt="" onclick="addTodo()">
                             </div>
                         </div>
                         <ul id="mylist"></ul>
@@ -117,7 +117,7 @@
                     </div>
                     <button class="button-create">
                         <span>Create Task</span>
-                        <img src="/assets/img/check.svg" alt="">
+                        <img src="assets/img/check.svg" alt="">
                     </button>
                 </div>
             </div>
@@ -125,7 +125,7 @@
     </div>
 
     <div id="msg-box-create-task" class="d-none">
-        <span>Task added to board <img src="./assets/img/menu-icon-board-white.svg" alt="Board icon"></span>
+        <span>Task added to board <img src="assets/img/menu-icon-board-white.svg" alt="Board icon"></span>
     </div>
 
     <div w3-include-html="assets/templates/mobile_menu.html"></div>

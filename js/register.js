@@ -105,10 +105,10 @@ function privacyCheck() {
   let checkBoxImage = document.getElementById('checkbox');
 
   if (!checkBox) {
-    checkBoxImage.src = './assets/img/checkbox_active.svg';
+    checkBoxImage.src = 'assets/img/checkbox_active.svg';
     checkBox = true;
   } else {
-    checkBoxImage.src = './assets/img/checkbox.svg';
+    checkBoxImage.src = 'assets/img/checkbox.svg';
     checkBox = false;
   }
 }
@@ -160,10 +160,10 @@ function showPassword(inputPassword, showIcon) {
     return
   } if (inputField.type === "password") {
     inputField.type = "text";
-    icon.src = './assets/img/visibility.svg';
+    icon.src = 'assets/img/visibility.svg';
   } else {
     inputField.type = "password";
-    icon.src = './assets/img/visibility_off.svg';
+    icon.src = 'assets/img/visibility_off.svg';
   }
 }
 
@@ -179,13 +179,13 @@ function changePasswordIcon(inputPassword, showIcon) {
   const icon = document.getElementById(showIcon);
 
   if (inputField.value === '') {
-    icon.src = './assets/img/lock_icon.svg';
+    icon.src = 'assets/img/lock_icon.svg';
   } else {
-    icon.src = './assets/img/visibility_off.svg';
+    icon.src = 'assets/img/visibility_off.svg';
   } if (inputField.type === "text") {
-    icon.src = './assets/img/visibility.svg';
+    icon.src = 'assets/img/visibility.svg';
   } if (inputField.value === '') {
-    icon.src = './assets/img/lock_icon.svg';
+    icon.src = 'assets/img/lock_icon.svg';
     inputField.type = "password";
   }
 }

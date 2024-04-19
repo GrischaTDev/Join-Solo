@@ -34,9 +34,9 @@ function closeAddTaskPopup() {
 function showPopup(taskId) {
     document.body.classList.add('popup-open');
     let task = findTaskById(taskId);
-    let urgentSymbolHTML = task.priority.urgent ? `<img src="/assets/img/prio-urgent.svg" alt="Urgent"> Urgent` : "";
-    let mediumSymbolHTML = task.priority.medium ? `<img src="/assets/img/prio-medium.svg" alt="Medium"> Medium` : "";
-    let lowSymbolHTML = task.priority.low ? `<img src="/assets/img/prio-low.svg" alt="Low"> Low` : "";
+    let urgentSymbolHTML = task.priority.urgent ? `<img src="assets/img/prio-urgent.svg" alt="Urgent"> Urgent` : "";
+    let mediumSymbolHTML = task.priority.medium ? `<img src="assets/img/prio-medium.svg" alt="Medium"> Medium` : "";
+    let lowSymbolHTML = task.priority.low ? `<img src="assets/img/prio-low.svg" alt="Low"> Low` : "";
     let userNamesHTML = task.userList.map((user) => renderInitialsForPopup(user)
     ).join("");
     let subtasksHTML = task.subtask ? task.subtask.map((subtask) => renderSubtasksInPopup(taskId, subtask)
@@ -118,7 +118,7 @@ function getValuesFromAllTasksArray(taskToEdit) {
  */
 function closeUserListInPopup() {
     const inputIcon = document.getElementById('input-icon');
-    inputIcon.src = './assets/img/arrow_drop_down_1.svg';
+    inputIcon.src = 'assets/img/arrow_drop_down_1.svg';
     document.getElementById("user-list").classList.add("d-none");
 }
 
@@ -152,7 +152,7 @@ function openUserListEdit(event) {
     userList.innerHTML = "";
     if (userList.classList.contains("d-none")) {
         userList.classList.remove("d-none");
-        inputIcon.src = "./assets/img/arrow_drop_down_2.svg";
+        inputIcon.src = "assets/img/arrow_drop_down_2.svg";
     }
     users.forEach((user, i) => {
         const userColor = user["color"];
@@ -183,10 +183,10 @@ function toggleAddUserEdit(userId) {
     let checkBoxUser = document.getElementById(`user-checkbox${userId}`);
     if (selectedUSerIndex === -1) {
         selectedUser.push(user);
-        checkBoxUser.src = "./assets/img/checkbox_active_white.svg";
+        checkBoxUser.src = "assets/img/checkbox_active_white.svg";
     } else {
         selectedUser.splice(selectedUSerIndex, 1);
-        checkBoxUser.src = "./assets/img/checkbox.svg";
+        checkBoxUser.src = "assets/img/checkbox.svg";
     }
     renderSelectedUsersInEdit(selectedUser);
 }
@@ -249,11 +249,11 @@ function toggleAddUser(i) {
     if (selectedUSerIndex === -1) {
         userColumn.classList.add("user-list-active");
         selectedUser.push(user);
-        checkBoxUser.src = "./assets/img/checkbox_active_white.svg";
+        checkBoxUser.src = "assets/img/checkbox_active_white.svg";
     } else {
         userColumn.classList.remove("user-list-active");
         selectedUser.splice(selectedUSerIndex, 1);
-        checkBoxUser.src = "./assets/img/checkbox.svg";
+        checkBoxUser.src = "assets/img/checkbox.svg";
     }
     renderUserList(i);
     save();

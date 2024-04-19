@@ -32,7 +32,7 @@ function load() {
         loggedInUser = JSON.parse(currentUserUser);
         if (loggedInUser.length === 0) {
             alert('Sie müssen sich anmelden!');
-            window.location.href = './index.html';
+            window.location.href = 'index.html';
         }
     }
 }
@@ -43,7 +43,7 @@ function load() {
  */
 function logout() {
     loggedInUser.splice(0, loggedInUser.length);
-    window.location.href = './index.html';
+    window.location.href = 'index.html';
     save();
 }
 

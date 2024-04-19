@@ -13,7 +13,7 @@ function generateFilteredUserHtml(user, userColor, initialLetters, i) {
       <span class="letter-icon" style="background-color:${userColor}">${initialLetters}</span>
       <div>${user.name}</div>
     </div>
-    <img id="user-checkbox${i}" src="${isUSerSelected(i) ? './assets/img/checkbox_active_white.svg' : './assets/img/checkbox.svg'}" alt="">
+    <img id="user-checkbox${i}" src="${isUSerSelected(i) ? 'assets/img/checkbox_active_white.svg' : 'assets/img/checkbox.svg'}" alt="">
   </div>
   `;
 }
@@ -34,7 +34,7 @@ function generateOpenUserListHtml(user, userColor, initialLetters, i) {
       <span class="letter-icon" style="background-color:${userColor}">${initialLetters}</span>
       <div>${user.name}</div>
     </div>
-    <img id="user-checkbox${i}" src="${isUSerSelected(i) ? './assets/img/checkbox_active_white.svg' : './assets/img/checkbox.svg'}" alt="">
+    <img id="user-checkbox${i}" src="${isUSerSelected(i) ? 'assets/img/checkbox_active_white.svg' : 'assets/img/checkbox.svg'}" alt="">
   </div>
   `;
 }
@@ -53,14 +53,14 @@ function generateTaskHtml(todo, i) {
       <input id="edit-input-${i}" class="edit-input d-none" value="${todo}" onchange="updateTodo(${i}, this.value)">
       </div>
       <div id="show-actions-${i}" class="actions">
-        <img src="./assets/img/edit_icon.svg" class="subtask-btn" alt="" onclick="editTodo(${i})">
+        <img src="assets/img/edit_icon.svg" class="subtask-btn" alt="" onclick="editTodo(${i})">
         <span class="input-options-border"></span>
-        <img src="./assets/img/delete_icon.svg" class="subtask-btn" alt="" onclick="deleteTodo(${i})">
+        <img src="assets/img/delete_icon.svg" class="subtask-btn" alt="" onclick="deleteTodo(${i})">
       </div>
       <div id="edit-actions-${i}" class="actions-edit d-none">
-        <img src="./assets/img/create-subtask.svg" class="subtask-btn" alt="" onclick="saveTodo(${i})">
+        <img src="assets/img/create-subtask.svg" class="subtask-btn" alt="" onclick="saveTodo(${i})">
         <span class="input-options-border"></span>
-        <img src="./assets/img/delete_icon.svg" class="subtask-btn" alt="" onclick="deleteTodo(${i})">
+        <img src="assets/img/delete_icon.svg" class="subtask-btn" alt="" onclick="deleteTodo(${i})">
       </div>
   </div>
   `;
