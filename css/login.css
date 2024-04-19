@@ -4,6 +4,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    gap: 20px;
 }
 
 .input-invalid {
@@ -266,7 +267,6 @@ input:focus-visible {
 }
 
 .sign-up {
-    position: absolute;
     display: flex;
     align-items: center;
     gap: 35px;
@@ -531,3 +531,5 @@ input:focus-visible {
         font-weight: 700;
     }
 }
+
+
